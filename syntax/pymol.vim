@@ -24,9 +24,51 @@ syntax keyword pymolSelectionOperator bysegment bs. byobject bo. bycell byring
 syntax keyword pymolSelectionOperator neighbor nbr. bound_to bto. extend xt.
 syntax keyword pymolSelectionOperator pepseq ps. rep
 
+" Commands
+syntax keyword pymolCommand abort alias align alter alter_state as attach
+syntax keyword pymolCommand backward bg_color bond button
+syntax keyword pymolCommand cache capture cd center centerofmass clip cls color
+syntax keyword pymolCommand config_mouse copy count_atoms count_frames count_states
+syntax keyword pymolCommand create cycle_valence
+syntax keyword pymolCommand delete deprotect deselect disable dist[ance] draw dss
+syntax keyword pymolCommand edit edit_keys enable ending extend
+syntax keyword pymolCommand fab feedback fetch fit flag fork forward frag[ment]
+syntax keyword pymolCommand frame full_screen fuse
+syntax keyword pymolCommand get get_angle get_area get_chains get_color_indices
+syntax keyword pymolCommand get_dihedral get_dist[ance] get_extent get_model
+syntax keyword pymolCommand get_names get_names_of_type get_object_matrix
+syntax keyword pymolCommand get_pdbstr get_position get_session get_symmetry
+syntax keyword pymolCommand get_title get_type get_version get_view gradient group
+syntax keyword pymolCommand h_add h_fill hide
+syntax keyword pymolCommand id_atom identify index indicate
+syntax keyword pymolCommand intra_fit intra_rms intra_rms_cur
+syntax keyword pymolCommand invert isodot isolevel isomesh isosurface
+syntax keyword pymolCommand iterate iterate_state
+syntax keyword pymolCommand label load load_model load_traj ls
+syntax keyword pymolCommand map_double map_new map_set map_set_border map_trim
+syntax keyword pymolCommand mappend mclear mdo mdump mmatrix
+syntax keyword pymolCommand mplay mpng mset mstop mview
+syntax keyword pymolCommand mask matrix_copy matrix_reset mem meter_reset middle
+syntax keyword pymolCommand morph move multisave
+syntax keyword pymolCommand order orient origin
+syntax keyword pymolCommand pair_fit png protect ps[eudoatom] push_undo pwd
+syntax keyword pymolCommand quit
+syntax keyword pymolCommand ramp_new ray read_molstr read_pdbstr rebuild recolor
+syntax keyword pymolCommand redo refresh reinit[ialize] remove remove_picked rename
+syntax keyword pymolCommand replace reset rewind rms rms_cur rock rotate run
+syntax keyword pymolCommand save scene select set set_bond set_color set_colour
+syntax keyword pymolCommand set_dihedral set_geometry set_key set_name set_symmetry
+syntax keyword pymolCommand set_title set_view show show_as slice slice_new smooth
+syntax keyword pymolCommand sort space splash split_states super symexp sync system
+syntax keyword pymolCommand torsion translate turn
+syntax keyword pymolCommand unbond undo unmask unpick unset unset_deep update
+syntax keyword pymolCommand view viewport volume volume_color
+syntax keyword pymolCommand window wizard
+syntax keyword pymolCommand zoom
 
 " Syntax highlighting
 highlight link pymolSelector Type
 highlight link pymolSelectionOperator Operator
+highlight link pymolCommand Function
 
 let b:current_syntax = "pymol"
