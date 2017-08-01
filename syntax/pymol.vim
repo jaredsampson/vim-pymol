@@ -74,6 +74,20 @@ syntax keyword pymolCommand view viewport volume volume_color
 syntax keyword pymolCommand window wizard
 syntax keyword pymolCommand zoom
 
+" Numbers
+" Hex, Oct, Bin
+syntax match pymolNumber "\<0[xX]\x\+\>" display
+syntax match pymolNumber "\<0[oO]\o\+\>" display
+syntax match pymolNumber "\<0[bB][01]\+\>" display
+" Integer
+syntax match pymolNumber "\<\d\>" display
+syntax match pymolNumber "\<[1-9]\d\+\>" display
+syntax match pymolNumber "\<\d\+[jJ]\>" display
+" Float
+syntax match pymolNumber "\.\d\+\%([eE][+-]\=\d\+\)\=[jJ]\=\>" display
+syntax match pymolNumber "\<\d\+[eE][+-]\=\d\+[jJ]\=\>" display
+syntax match pymolNumber "\<\d\+\.\d*\%([eE][+-]\=\d\+\)\=[jJ]\=" display
+
 " Comments
 syntax match pymolComment "\v#.*$"
 
@@ -82,5 +96,6 @@ highlight link pymolSelector Type
 highlight link pymolSelectionOperator Operator
 highlight link pymolCommand Function
 highlight link pymolComment Comment
+highlight link pymolNumber Number
 
 let b:current_syntax = "pymol"
