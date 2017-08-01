@@ -1,3 +1,11 @@
+" Vim syntax file¬
+" Language:     PyMOL Script
+" Maintainer:   Jared Sampson <jared.sampson@gmail.com>¬
+" URL:          https://github.com/jaredsampson/vim-pymol¬
+" Last Change:  2017-08-01
+" Filenames:    *.pml¬
+" Version:      0.1¬
+
 if exists("b:current_syntax")
     finish
 endif
