@@ -1,0 +1,2 @@
+" Comments
+setlocal commentstring=#%s
