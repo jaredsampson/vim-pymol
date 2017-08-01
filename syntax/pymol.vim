@@ -66,9 +66,13 @@ syntax keyword pymolCommand view viewport volume volume_color
 syntax keyword pymolCommand window wizard
 syntax keyword pymolCommand zoom
 
+" Comments
+syntax match pymolComment "\v#.*$"
+
 " Syntax highlighting
 highlight link pymolSelector Type
 highlight link pymolSelectionOperator Operator
 highlight link pymolCommand Function
+highlight link pymolComment Comment
 
 let b:current_syntax = "pymol"
