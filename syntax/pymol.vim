@@ -15,7 +15,7 @@ syntax keyword pymolSelector masked msk. protected pr.
 syntax keyword pymolSelector bonded fixed fxd. restrained rst.
 
 " Selection operators
-syntax match   pymolSelectionOperator "[!&|+-]"
+syntax match   pymolSelectionOperator "[!&|]"
 syntax keyword pymolSelectionOperator not and or in of
 syntax keyword pymolSelectionOperator like l. gap around a. expand x. within w.
 syntax keyword pymolSelectionOperator near_to nto. beyond be.
