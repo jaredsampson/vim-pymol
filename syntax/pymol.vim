@@ -52,7 +52,7 @@ syntax keyword pymolCommand id_atom identify index indicate
 syntax keyword pymolCommand intra_fit intra_rms intra_rms_cur
 syntax keyword pymolCommand invert isodot isolevel isomesh isosurface
 syntax keyword pymolCommand iterate iterate_state
-syntax keyword pymolCommand label load load_model load_traj ls
+syntax keyword pymolCommand label load load_model load_traj log_open ls
 syntax keyword pymolCommand map_double map_new map_set map_set_border map_trim
 syntax keyword pymolCommand mappend mclear mdo mdump mmatrix
 syntax keyword pymolCommand mplay mpng mset mstop mview
