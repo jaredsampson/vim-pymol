@@ -95,6 +95,14 @@ syntax match pymolString '\v\"[^"]*\"'
 " Comments
 syntax match pymolComment "\v#.*$"
 
+" Python block
+try
+    unlet! b:current_syntax
+    syn include @PYTHON syntax/python.vim
+catch /E484/
+endtry
+syntax region pymolPythonBlock start="\v^\s*python\s*$" end="\v^\s*python\s+end\s*$" keepend contains=@PYTHON containedin=TOP
+
 " Syntax highlighting
 highlight link pymolSelector Type
 highlight link pymolSelectionOperator Operator
@@ -102,5 +110,6 @@ highlight link pymolCommand Function
 highlight link pymolComment Comment
 highlight link pymolNumber Number
 highlight link pymolString String
+highlight link pymolPythonBlock PreProc
 
 let b:current_syntax = "pymol"
