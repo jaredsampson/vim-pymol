@@ -88,6 +88,10 @@ syntax match pymolNumber "\.\d\+\%([eE][+-]\=\d\+\)\=[jJ]\=\>" display
 syntax match pymolNumber "\<\d\+[eE][+-]\=\d\+[jJ]\=\>" display
 syntax match pymolNumber "\<\d\+\.\d*\%([eE][+-]\=\d\+\)\=[jJ]\=" display
 
+" Strings
+syntax match pymolString "\v\'[^']*\'"
+syntax match pymolString '\v\"[^"]*\"'
+
 " Comments
 syntax match pymolComment "\v#.*$"
 
@@ -97,5 +101,6 @@ highlight link pymolSelectionOperator Operator
 highlight link pymolCommand Function
 highlight link pymolComment Comment
 highlight link pymolNumber Number
+highlight link pymolString String
 
 let b:current_syntax = "pymol"
